@@ -55,6 +55,16 @@ a{
     background-color: #151931;
     color: #fff;
 }
+.btn-4{
+    background-color: #070a16;
+    color: #EDBC11;
+    font-weight: 700;
+    font-size: 17px;
+}
+.btn-4:hover{
+    background-color: #fff;
+    color: #070a16;
+}
 .content-box{
     padding: 50px 15px;
 }
@@ -196,7 +206,7 @@ li{
     background-color: transparent;
 }
 .topo1-btn-mail{
-    margin: 30px 30px 0 0;
+    margin: 30px 170px 0 0;
 }
 .topo1-btn-mail a{
     font-size: 15px;
@@ -207,7 +217,9 @@ li{
     color: #EDBC11;
 }
 .topo1-btn-contact{
-    margin-top: 14px;
+    position: absolute;
+    top: 0;
+    right: 0;
 }
 .topo1-btn-contact a{
     padding: 15px 30px;
@@ -542,6 +554,166 @@ animation: none;
 
 
 
+/*SEÇÃO PORTIFÓLIO*/
+.blog{
+    background-color: #fff;
+}
+.blog h3{
+    color: #D9DAE7;
+    font-size: 3em;
+    font-weight: 800;
+    text-align: center;
+}
+.blog h4{
+    color: #151931;
+    font-size: 1.5em;
+    margin-top: -15px;
+    text-align: center;
+}
+.blog-flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    width: 100%;
+}
+.blog-box{
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+    border-radius: 7px;
+    margin-bottom: 20px;
+}
+.blog-box img{
+    width: 350px;
+    height: 280px;
+}
+.blog-title{
+    color: #151931;
+    font-weight: 800;
+    font-size: 1.3em;
+    padding: 20px;
+}
+.blog-box a:hover > .blog-title{
+    color: #EDBC11;
+}
+.blog-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.blog-btn a{
+    width: 250px;
+    text-align: center;
+    margin-top: 40px;
+}
+
+
+
+/*SEÇÃO CONTATO*/
+.contato{
+    background-color: #EDBC11;
+}
+.contato h3{
+    color: #f0f0f0;
+    font-size: 3em;
+    font-weight: 800;
+    text-align: center;
+}
+.contato h5{
+    color: #151931;
+    font-size: 1.2em;
+    font-weight: 700;
+    text-align: center;
+    margin-top: -13px;
+}
+.contato-flex{
+    display: flex;
+    margin-top: 70px;
+}
+.contato-box-left{
+    width: 50%;
+    padding-right: 50px;
+}
+.contato-box-left h4{
+    text-align: left;
+    font-weight: 700;
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+.contato-box-right{
+    padding-left: 50px;
+    padding-top: 50px;
+}
+.cont-mail{
+    font-size: 1.3em;
+    margin-bottom: 15px;
+}
+.cont-phone{
+    font-size: 1.6em;
+    margin-bottom: 15px;
+}
+.cont-city{
+    font-size: 1.5em;
+}
+form{
+    display: flex;
+    flex-direction: column;
+}
+form input, textarea, select{
+    background-color: transparent;
+    border: 1px solid #070a16;
+    padding: 10px 20px;
+    margin-bottom: 10px;
+    color: #070a16;
+    font-size: 1.3em;
+    border-radius: 3px;
+}
+form input::placeholder{
+    color: #070a16;
+}
+form textarea::placeholder{
+    color: #070a16;
+}
+form textarea{
+    font-size: 1.3em;
+    margin-top: 10px;
+}
+form select{
+    font-size: 1.3em;
+}
+form input:focus{
+    background-color: #fff;
+}
+.btn-form-home{
+    cursor: pointer;
+    width: 200px;
+    margin-top: 20px;
+}
+
+
+
+
+
+
+/*SEÇÃO FOOTER*/
+.footer-flex{
+    display: flex;
+    justify-content: space-between;
+}
+.f-nav{
+    display: flex;
+    justify-content: flex-start;
+}
+.f-nav a{
+    margin-right: 15px;
+}
+.f-nav a:hover{
+    color: #fff;
+}
+.footer-social a{
+    font-size: 1.2em;
+}
+
 
 
 
@@ -594,22 +766,21 @@ animation: none;
         align-content: center;
     }
     .sobre-min-info{
-        width: 65%;
-        width: 50%;
+        width: 60%;
     }
     .sobre-inf{
         font-size: 1em;
     }
     .sobre-min-img{
-        width: 50%;
+        width: 40%;
         display: flex;
         flex-direction: column;
         justify-content: center;
         margin-top: 30px;
     }
     .sobre-min-img img{
-        width: 300px;
-        max-width: 300px;
+        width: 200px;
+        max-width: 200px;
     }
     .row-sobre-skils{
         flex-wrap: wrap;
@@ -622,7 +793,65 @@ animation: none;
     .services-box{
         width: 300px;
     }
+
+
+    .portifolio-flex{
+        display: flex;        
+        flex-direction: column;
+        align-items: center;
+        margin-top: 50px;
+    }
+
+
+    .blog-flex{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+
+    .contato-flex{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contato-box-left{
+        padding-right: 0px;
+        width: 100%;
+    }
+    .contato-box-right{
+        padding-left: 0px;
+    }
+
+
+
+    /*SEÇÃO FOOTER*/
+    .footer-flex{
+        display: flex;
+        flex-direction: column;
+    }
+    .f-nav{
+        display: flex;
+        flex-direction: column; 
+        margin-top: -40px;       
+    }
+    .f-nav a{
+        margin-right: 0px;
+        font-size: 1.5em;
+    }
+    .footer-social a{
+        font-size: 1.7em;
+    }
+    .footer-social{
+        margin-top: 20px;
+    }
+
+
+
 }
+
+
 
 
 /*******************************************************************************/
@@ -670,6 +899,14 @@ animation: none;
     }
 
 
+    .topo1-btn-mail{
+        display: none;
+    }
+    .topo1-btn-contact{
+        display: none;
+    }
+
+
 
     /*SEGUNDA SEÇÃO*/
     .row-sobre-flex{
@@ -701,6 +938,35 @@ animation: none;
     .skils{
         margin-top: 50px;
         width: 300px;
+    }
+
+
+    
+    .blog-flex{
+        justify-content: center;
+        align-items: center;
+    }
+    .blog-box{
+        margin: 0 5px 20px 5px;
+    }
+
+
+
+    .contato-box-left{
+        padding-right: 20px;
+    }
+    .contato-box-right{
+        padding-left: 20px;
+    }
+
+
+    .footer-flex{
+        display: flex;
+        flex-direction: column;
+        margin-top: -50px;
+    }
+    .footer-social{
+        margin-top: 20px;
     }
     
 }
@@ -827,5 +1093,71 @@ animation: none;
     .expert-box-bloc{
         width: 100%;
     }
+
+
+
+    /*SEÇÃO PORTIFÓLIO*/
+
+    .portifolio-flex{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 50px;
+    }
+
+
+
+
+    /*SEÇÃO BLOG*/
+    .blog-box img{
+        width: 320px;
+        height: 230px;
+    }
+
+
+    /*SEÇÃO CONTATO*/
+    .contato-flex{
+        display: flex;
+        flex-direction: column;
+        margin-top: 70px;
+    }
+    .contato-box-left{
+        width: 100%;
+        padding-right: 0px;
+    }
+    .contato-box-right{
+        padding-left: 0px;
+        padding-top: 30px;
+    }
+    .cont-mail{
+        font-size: 1em;
+    }
+
+
+
+    /*SEÇÃO FOOTER*/
+    .footer-flex{
+        display: flex;
+        flex-direction: column;
+        margin-top: -50px;
+    }
+    .f-nav{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 30px;
+    }
+    .f-nav a{
+        margin-right: 0;
+        margin-bottom: 10px;
+        font-size: 1.3em;
+    }
+    .footer-social a{
+        font-size: 1.5em;
+    }
+
+
+
+
+
 
 }
