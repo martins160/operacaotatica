@@ -15,26 +15,42 @@
         <div class="img-perfil"></div>
         <div class="header-name">Marcelo Martins</div>
         <nav class="header-menu">
-            <ul>
-                <li><a href=""><i class="fa-solid fa-address-card header-link"></i> Sobre mim</a></li>
-                <li><a href=""><i class="fa-solid fa-code header-link"></i> Serviços</a></li>
-                <li><a href=""><i class="fa-solid fa-briefcase header-link"></i> Cases</a></li>
+            <ul role="menu">
+                <li><a href="#sobre-min" class="menu"><i class="fa-solid fa-address-card header-link"></i> Sobre mim</a></li>
+                <li><a href="#servicos" class="menu"><i class="fa-solid fa-code header-link"></i> Serviços</a></li>
+                <li><a href="#cases" class="menu"><i class="fa-solid fa-briefcase header-link"></i> Cases</a></li>
                 <!--<li><a href=""><i class="fa fa-quote-right header-link"></i> Parceiros</a></li>-->
-                <li><a href=""><i class="fa-brands fa-twitch header-link"></i> Blog</a></li>
-                <li><a href=""><i class="fa-brands fa-contao header-link"></i> Contatos</a></li>
+                <li><a href="#blog" class="menu"><i class="fa-brands fa-twitch header-link"></i> Blog</a></li>
+                <li><a href="#contatos" class="menu"><i class="fa-brands fa-contao header-link"></i> Contatos</a></li>
             </ul>
         </nav>
         <div class="header-copy">
             <div class="header-copy-box">
-                <i class="fa-solid fa-copyright"></i> Direitos Reservados
+                <a href="https://github.com/martins160" target="_blank"><i class="fa-brands fa-github-alt"></i> direitos reservados</a>
             </div>            
         </div>
     </header>
-    <header class="header2">
+    <header class="header2" id="topo-site">
         <section class="header2-flex">
             <a href=""><img src="assets/images/logo.png" alt="Operação Tática - Desenvolvimento de Sites e Sistemas Web" width="150"></a>
-            <a href="" class="menu-mobile"><i class="fa-solid fa-bars-staggered"></i></a>
+
+            <!--<a href="" class="menu-mobile" id="btn-mobile"><i class="fa-solid fa-bars-staggered"></i></a>-->
+
+            <nav id="nav">
+                <button id="btn-mobile">MENU <span id="hamburger"></span></button>
+                <ul id="menu" role="menu">
+                    <li><a href="#sobre-min" class="menu"><i class="fa-solid fa-address-card header-link"></i> Sobre mim</a></li>
+                    <li><a href="#servicos" class="menu"><i class="fa-solid fa-code header-link"></i> Serviços</a></li>
+                    <li><a href="#cases" class="menu"><i class="fa-solid fa-briefcase header-link"></i> Cases</a></li>
+                    <!--<li><a href=""><i class="fa fa-quote-right header-link"></i> Parceiros</a></li>-->
+                    <li><a href="#blog" class="menu"><i class="fa-brands fa-twitch header-link"></i> Blog</a></li>
+                    <li><a href="#contatos" class="menu"><i class="fa-brands fa-contao header-link"></i> Contatos</a></li>
+                </ul>
+            </nav>
+
+
         </section>
+        
     </header>
     
     <main class="main">
@@ -49,13 +65,13 @@
                     </div>
                     <div class="topo1-btns">
                         <div class="topo1-btn-whats">
-                            <a href=""><i class="fa-brands fa-whatsapp"></i> (34) 99655-3285</a>
+                            <a href="https://wa.link/i7wg7g" target="_blank"><i class="fa-brands fa-whatsapp"></i> (34) 99655-3285</a>
                         </div>
                         <div class="topo1-btn-mail">
-                            <a href="">marcelo@operacaotatica.com.br</a>
+                            <a href="mailto:marcelo@operacaotatica.com.br" target="_blank">marcelo@operacaotatica.com.br</a>
                         </div>
                         <div class="topo1-btn-contact">
-                            <a href=""><i class="fa-solid fa-envelope-circle-check"></i></a>
+                            <a href="#contatos" class="menu"><i class="fa-solid fa-envelope-circle-check"></i></a>
                         </div>
                     </div>
                 </section>
@@ -69,19 +85,19 @@
                             Trabalhamos nessa área desde 2008. Somos especialistas em criações wordpress, design de interface do usuário, e desenvolvimento web PHP.
                         </div>
                         <div class="topo2-btn">
-                            <a href="" class="btn btn-1 btn-cartao-1">Download CV <i class="fa-solid fa-cloud-arrow-down"></i></a>
-                            <a href="" class="btn btn-2 btn-cartao">Meu Cartão <i class="fa-solid fa-user"></i></a>
+                            <a href="https://operacaotatica.com.br/downloads/site/CV%20Marcelo%20Martins.pdf" target="_blank" class="btn btn-1 btn-cartao-1">Download CV <i class="fa-solid fa-cloud-arrow-down"></i></a>
+                            <a href="https://www.canva.com/design/DAFAglyppd4/eapmi0w7qgkozorN_1mQwQ/view?website#2" target="_blank" class="btn btn-2 btn-cartao">Meu Cartão <i class="fa-solid fa-user"></i></a>
                         </div>
                     </div>
                     <div class="topo2-col-2">                       
-                        <a href="" class="topo2-insta"><i class="fa-brands fa-instagram"></i></a>
-                        <a href="" class="topo2-face"><i class="fa-brands fa-facebook-f"></i></a>
-                        <a href="" class="topo2-linkd"><i class="fa-brands fa-linkedin-in"></i></a>
-                        <a href="" class="topo2-beh"><i class="fa-brands fa-behance"></i></a>
+                        <a href="https://www.instagram.com/operacaotaticaweb/" target="_blank" class="topo2-insta"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.facebook.com/operacaotaticaweb" target="_blank" class="topo2-face"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="https://www.linkedin.com/in/marcelomartinsbarbosa/" target="_blank" class="topo2-linkd"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="https://www.behance.net/operacaotatica" target="_blank" class="topo2-beh"><i class="fa-brands fa-behance"></i></a>
                     </div>
                 </section>
             </section>
-            <section class="sobre-min">
+            <section class="sobre-min" id="sobre-min">
                 <div class="content-box">
                     <div class="row-sobre-flex">
                         <div class="sobre-min-img">
@@ -94,7 +110,7 @@
                                 Sou Desenvolvedor Front-end e Back-end Freelancer com mais de 14 anos de experiência. Eu sou de Uberlândia MG. Trabalhamos com diversos projetos nas áreas de desenvolvimento web, temos experiência em Wordpress, Elementor, PHP, criação de Landing Pages, Sites Institucionais e Lojas Virtuais.
                             </div>
                             <div class="btn-sobre">
-                                <a href="" class="btn btn-3">Meu Cartão <i class="fa-solid fa-mobile-screen-button"></i></a>
+                                <a href="https://www.canva.com/design/DAFAglyppd4/eapmi0w7qgkozorN_1mQwQ/view?website#2" target="_blank" class="btn btn-3">Meu Cartão <i class="fa-solid fa-mobile-screen-button"></i></a>
                             </div>
                             
                         </div>
@@ -196,7 +212,7 @@
 
                 </div>
             </section>
-            <section class="services">
+            <section class="services" id="servicos">
                 <div class="content-box">
                     <h3>Alguns serviços que oferecemos</h3>
                     <div class="services-flex">
@@ -251,13 +267,13 @@
                     </div>
                 </div>
             </section>
-            <section class="portifolio">
+            <section class="portifolio" id="cases">
                 <div class="content-box">
                     <h3>Cases</h3>
                     <h4>Alguns Trabalhos realizados</h4>
                     <div class="portifolio-flex">
                         <div class="portifolio-box">
-                            <a href="">                                
+                            <a href="https://www.geracaoterraagricola.com.br/" target="_blank">                                
                                 <img src="assets/images/portifolio/criacao_sites_wordpress_geracao_terra_agricola.jpg" alt="Sites e Sistemas Operação Tática" width="300" height="193">
                                 <div class="port-bloc-flex">
                                     <div class="port-site-tipo">CRIAÇÃO DE SITE WORDPRESS</div>
@@ -267,7 +283,7 @@
                             </a>
                         </div>
                         <div class="portifolio-box">
-                            <a href="">
+                            <a href="https://cazollisupermercados.com.br/" target="_blank">
                                 <img src="assets/images/portifolio/cazolli.jpg" alt="Sites e Sistemas Operação Tática" width="300" height="193">
                                 <div class="port-bloc-flex">
                                     <div class="port-site-tipo">CRIAÇÃO DE SITE WORDPRESS</div>
@@ -277,7 +293,7 @@
                             </a>
                         </div>
                         <div class="portifolio-box">
-                            <a href="">
+                            <a href="https://toledodeminas.com.br/" target="_blank">
                                 <img src="assets/images/portifolio/toledo.jpg" alt="Sites e Sistemas Operação Tática" width="300" height="193">
                                 <div class="port-bloc-flex">
                                     <div class="port-site-tipo">CRIAÇÃO DE SITE WORDPRESS</div>
@@ -287,7 +303,7 @@
                             </a>
                         </div>
                         <div class="portifolio-box">
-                            <a href="">
+                            <a href="https://casadasessenciasuberlandia.com.br/" target="_blank">
                                 <img src="assets/images/portifolio/casa-das-essencias.jpg" alt="Sites e Sistemas Operação Tática" width="300" height="193">
                                 <div class="port-bloc-flex">
                                     <div class="port-site-tipo">CRIAÇÃO DE SITE WORDPRESS</div>
@@ -297,7 +313,7 @@
                             </a>
                         </div>
                         <div class="portifolio-box">
-                            <a href="">
+                            <a href="https://presidentevargasfrutal.com.br/" target="_blank">
                                 <img src="assets/images/portifolio/presidente-vargas.jpg" alt="Sites e Sistemas Operação Tática"  width="300" height="193">
                                 <div class="port-bloc-flex">
                                     <div class="port-site-tipo">CRIAÇÃO DE SITE WORDPRESS</div>
@@ -307,7 +323,7 @@
                             </a>
                         </div>
                         <div class="portifolio-box">
-                            <a href="">
+                            <a href="https://farolassessoriaemarketing.com.br/" target="_blank">
                                 <img src="assets/images/portifolio/farol.jpg" alt="Sites e Sistemas Operação Tática" width="300" height="193">
                                 <div class="port-bloc-flex">
                                     <div class="port-site-tipo">CRIAÇÃO DE SITE WORDPRESS</div>
@@ -315,11 +331,14 @@
                                     <div class="port-site-setor">ACESSORIA E MARKETING</div>
                                 </div>
                             </a>
-                        </div>
+                        </div>                        
                     </div>
+                    <div class="cases-btn">
+                        <a href="cases.html" class="btn btn-3">Ver Mais</a>
+                    </div> 
                 </div>
             </section>
-            <section class="blog">
+            <section class="blog" id="blog">
                 <div class="content-box">
                     <h3>Blog</h3>
                     <h4>Dicas e Idéias para seu negócio</h4>
@@ -348,13 +367,13 @@
                     </div>                    
                 </div>
             </section>
-            <section class="contato">
+            <section class="contato" id="contatos">
                 <div class="content-box">
                     <h3>Contato</h3>
                     <h5>Entre em contato conosco</h5>
                     <div class="contato-flex">
                         <div class="contato-box-left">
-                            <h4>Solicite um orçamento conosco</h4>                              
+                            <h4>Solicite um orçamento</h4>                              
                             <form action="">
                                 <input type="text" placeholder="Seu nome">
                                 <input type="email" placeholder="Email">
@@ -382,28 +401,30 @@
                 <div class="content-box footer-flex">                    
                     <div class="footer-nav">
                         <nav class="f-nav">                        
-                            <a href="">Sobre mim</a>
-                            <a href="">Serviços</a>
-                            <a href="">Cases</a>
-                            <a href="">Blog</a>
-                            <a href="">Contatos</a>                    
-                            <a href="">Política de privacidade</a>                    
-                            <a href="">Termos de uso</a>                    
+                            <a href="#sobre-min" class="menu">Sobre mim</a>
+                            <a href="#servicos" class="menu">Serviços</a>
+                            <a href="#cases" class="menu">Cases</a>
+                            <a href="#blog" class="menu">Blog</a>
+                            <a href="#contatos" class="menu">Contatos</a>                    
+                            <a href="" class="menu">Política de privacidade</a>                    
+                            <a href="" class="menu">Termos de uso</a>                    
                         </nav>
                     </div>                
                     <div class="footer-social">
-                        <a href="" class="topo2-insta"><i class="fa-brands fa-instagram"></i></a>
-                        <a href="" class="topo2-face"><i class="fa-brands fa-facebook-f"></i></a>
-                        <a href="" class="topo2-linkd"><i class="fa-brands fa-linkedin-in"></i></a>
-                        <a href="" class="topo2-beh"><i class="fa-brands fa-behance"></i></a>
+                        <a href="https://www.instagram.com/operacaotaticaweb/" target="_blank" class="topo2-insta"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.facebook.com/operacaotaticaweb" target="_blank" class="topo2-face"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="https://www.linkedin.com/in/marcelomartinsbarbosa/" target="_blank" class="topo2-linkd"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="https://www.behance.net/operacaotatica" target="_blank" class="topo2-beh"><i class="fa-brands fa-behance"></i></a>
                     </div>
-                </div>
+                </div>                
             </footer>
         
     </main>
 </div>
+<a href="#topo-site" class="topo-site"><i class="fa-solid fa-circle-arrow-up"></i></a>
 
 <script src="https://kit.fontawesome.com/be4ae43005.js" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" referrerpolicy="no-referrer"></script>
 <script src="assets/js/scripts.js"></script>
 </body>
 </html>

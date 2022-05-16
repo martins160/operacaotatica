@@ -1,3 +1,44 @@
+/* ANCORAS DO MENU */
+
+var $ancora = $('html, body');
+$('.menu').click(function() {
+    $ancora.animate({
+        scrollTop: $( $.attr(this, 'href') ).offset().top
+    }, 500);
+    return false;
+});
+
+
+
+
+
+/* VOLTAR AO TOPO */
+
+var $subir = $('html, body');
+$('.topo-site').click(function() {
+    $subir.animate({
+        scrollTop: $( $.attr(this, 'href') ).offset().top
+    }, 700);
+    return false;
+});
+
+//esconde o voltar ao topo
+$(document).on('scroll', function() {
+  let scroll = $(document).scrollTop();
+  let length = 100;
+
+  if (scroll > length) {
+    $('.topo-site').show();
+  } else {
+    $('.topo-site').hide();
+  }
+});
+
+
+
+
+/* LETRAS EM FORMATO DE DIGITAÇÃO */
+
 const typedTextSpan = document.querySelector(".typed-text");
 const cursorSpan = document.querySelector(".cursor");
 
@@ -39,3 +80,19 @@ function erase() {
 document.addEventListener("DOMContentLoaded", function() { // On DOM Load initiate the effect
   if(textArray.length) setTimeout(type, newTextDelay + 250);
 });
+
+
+
+
+
+
+/* EFEITO MENU MOBILE */
+
+const btnMobile = document.getElementById('btn-mobile');
+
+function toggleMenu(){
+  const nav = document.getElementById('nav');
+  nav.classList.toggle('active');
+}
+
+btnMobile.addEventListener('click', toggleMenu);
